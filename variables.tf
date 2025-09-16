@@ -3,6 +3,9 @@ variable resourcegroup_name {
     type = string
     default = "Terraform"
 }
+variable "vm_count" {
+  default = 10
+}
 variable resourcegroup_location {
    description = "this is resource group location"
   type = string
