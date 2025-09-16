@@ -1,3 +1,18 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 3.0"  # or whatever version you're targeting
+    }
+  }
+}
+provider "azurerm" {
+    features {
+      
+    }
+  
+}
+
 variable "prefix" {
   default = "tfvmex"
 }
